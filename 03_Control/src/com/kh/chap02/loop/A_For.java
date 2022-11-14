@@ -275,15 +275,14 @@ public class A_For {
 		// **3* => 3행이고 3열일때 -> 숫자 3표시
 		// ***4 => 4행이고 4열일때 -> 숫자 4표시
 
-		
-		for(int j =1; j <=4; j++) {//외부 for문 행을 나타냄 1행 
-                                   //4행까지 반복
-		
-			for (int i = 1; i <= 4; i++) {//내부 for문 열을 나타냄 1열
-                                          //4열까지 반복
-				if (i == j) { //1행 1열인 경우 '1'출력
+		for (int j = 1; j <= 4; j++) {// 외부 for문 행을 나타냄 1행
+										// 4행까지 반복
+
+			for (int i = 1; i <= 4; i++) {// 내부 for문 열을 나타냄 1열
+											// 4열까지 반복
+				if (i == j) { // 1행 1열인 경우 '1'출력
 					System.out.print(i);
-				} else { //1행 2열인 경우 '*' 출력
+				} else { // 1행 2열인 경우 '*' 출력
 					System.out.print("*");
 				}
 			}
@@ -291,35 +290,24 @@ public class A_For {
 		}
 	}
 
-	
 	public void method15() {
 		// 2단부터 9단까지 모두 출력하는 중첩 반복문
-		
+
 		int dan = 2;
-		
-		/*System.out.printf("--- %d 단 --- \n", dan);
-		for(int i = 1; i<=9; i++) {
-			System.out.printf("%d X %d = %d", dan, i, (dan*i));
-		}*/
-		
-		for(; dan <=9; dan++) {
+
+		/*
+		 * System.out.printf("--- %d 단 --- \n", dan); for(int i = 1; i<=9; i++) {
+		 * System.out.printf("%d X %d = %d", dan, i, (dan*i)); }
+		 */
+
+		for (; dan <= 9; dan++) {
 			System.out.printf("--- %d 단 --- \n", dan);
-			for(int i = 1; i<=9; i++) {
-				System.out.printf("%d X %d = %d \n", dan, i, (dan*i));
+			for (int i = 1; i <= 9; i++) {
+				System.out.printf("%d X %d = %d \n", dan, i, (dan * i));
 			}
 			System.out.println();
-		}	
-		
-		
-		
+		}
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
