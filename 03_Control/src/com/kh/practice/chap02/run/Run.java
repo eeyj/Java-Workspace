@@ -18,7 +18,7 @@ public class Run {
 		//lp.practice10();
 		//lp.practice11(); // -----> 못품
 		//lp.practice12(); // -----> 못품
-		lp.practice13(); // -----> 못품
+		//lp.practice13(); // -----> 못품
 		//lp.practice14();
 		//lp.practice15();
 		//lp.practice16();

@@ -176,12 +176,14 @@ public class LoopPractice {
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt(); // 4 라고 가정
 
-		for (int i = 0; i < num; i++) {// 0 1 2 3
+		for (int i = 0; i < num; i++) {// 0 1 2 3 바깥쪽 반복문 4행까지 실행 
 
-			for (int j = 0; j < i; j++) {// 0 1 2 3
+			for (int j = 0; j < i; j++) {// 0 1 2 3 공란을 몇번 입력할지 
+				                         // j 값이 i 와 동일하기 때문에 0 실행시 0개의 공란이 입력됨
 				System.out.print(" ");
 			}
-			for (int j = 0; j < num - i; j++) {// 4 3 2 1
+			for (int j = 0; j < num - i; j++) {// 4 3 2 1 *을 몇번 입력할지
+				                               // j 값은 num-1값이므로 0 1 2 3까지 *을 반복하여 입력
 				System.out.print("*");
 			}
 			System.out.println();
@@ -232,26 +234,18 @@ public class LoopPractice {
 		System.out.print("숫자 : ");
 		int num = sc.nextInt();
 
-		int prime = 0;
-		boolean flag = false;
-
-		if (num >= 2) {
-			for (int i = 2; i < num; i++) {
-				if (num % i == 0) {
-					flag = false;
-					System.out.println("소수가 아닙니다.");
-					break;
-				} else {
-					flag = true;
-					prime = num;
-				}
+		if(num < 2) {
+			System.out.println("잘못입력하셨습니다.");
+			return;
+		} 
+		
+		for(int i = 2; i < num; i++) {
+			if(num%i == 0 && num !=2) {
+				System.out.println("소수가 아닙니다.");
+				return;
 			}
-			if (flag == true) {
-				System.out.println("소수입니다.");
-			}
-		} else {
-			System.out.println("잘못 입력하셨습니다.");
 		}
+		System.out.println("소수입니다.");
 
 	}
 
