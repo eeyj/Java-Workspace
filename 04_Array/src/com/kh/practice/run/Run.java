@@ -4,13 +4,23 @@ import com.kh.practice.array.ArrayPractice;
 
 public class Run {
 	
-	public static void method(String[] args) {
+	public static void main(String[] args) {
 		
 		ArrayPractice ap = new ArrayPractice();
-		//app.practice1();
+		//ap.practice1();
 		//ap.practice2();
 		//ap.practice3();
-		ap.practice4();
+		//ap.practice4();
+		//ap.practice5();
+		//ap.practice6();
+		//ap.practice7();
+		//ap.practice8(); // --------> 못푼 문제
+		//ap.practice9();
+		
+		
+	
 	}
+	
+	
 
 }
