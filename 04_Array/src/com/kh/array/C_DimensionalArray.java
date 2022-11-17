@@ -177,24 +177,31 @@ public class C_DimensionalArray {
 
 		Scanner sc = new Scanner(System.in);
 
-		String kor = "";
-		String eng = "";
+		/*
+		 * String kor = ""; String eng = ""; for (int i = 0; i < score.length; i++) {
+		 * for (int j = 0; j < score[i].length; j++) { if (i == 0) {
+		 * System.out.print("국어 점수를 입력하세요 : "); score[i][j] = sc.nextInt(); kor +=
+		 * score[i][j] + " "; } else { System.out.print("영어 점수를 입력하세요 : "); score[i][j]
+		 * = sc.nextInt(); eng += score[i][j] + " "; } }
+		 * 
+		 * } System.out.println("국어 점수 : " + kor); System.out.println("영어 점수 : " + eng);
+		 */
+
 		for (int i = 0; i < score.length; i++) {
 			for (int j = 0; j < score[i].length; j++) {
-				if (i == 0) {
-					System.out.print("국어 점수를 입력하세요 : ");
-					score[i][j] = sc.nextInt();
-					kor += score[i][j] + " ";
-				} else {
-					System.out.print("영어 점수를 입력하세요 : ");
-					score[i][j] = sc.nextInt();
-					eng += score[i][j] + " ";
-				}
+				System.out.printf("%s 점수를 입력하세요 : ", i == 0 ? "국어" : "영어");
+				score[i][j] = sc.nextInt();
 			}
-			
 		}
-		System.out.println("국어 점수 : " + kor);
-		System.out.println("영어 점수 : " + eng);
+
+		for (int i = 0; i < score.length; i++) {
+			System.out.printf("%s 점수 : ", i == 0 ? "국어" : "영어");
+			for (int j = 0; j < score[i].length; j++) {
+				System.out.print(score[i][j] + " ");
+			}
+			System.out.println();
+		}
+
 	}
 
 }
