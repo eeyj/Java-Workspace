@@ -6,8 +6,8 @@ public class Run {
 
 	public static void main(String[] args) {
 		
-		Lotto l1 = new Lotto();
-		l1.information();
+		new Lotto().information();
+	
 		
 		
 		
