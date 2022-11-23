@@ -1,5 +1,7 @@
 package com.kh.chap02_objectarray.run;
 
+import java.util.Scanner;
+
 import com.kh.chap02_objectarray.model.vo.Phone;
 
 public class ObjectArrayRun {
@@ -33,6 +35,18 @@ public class ObjectArrayRun {
 	    
 		System.out.println("총 가격 : " + sum + "원");
 		System.out.println("평균가격 : "+ (sum/arr.length) + "원");
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 	}
