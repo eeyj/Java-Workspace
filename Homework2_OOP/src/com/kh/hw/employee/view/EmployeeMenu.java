@@ -125,6 +125,7 @@ public class EmployeeMenu {
 
 	public void deleteEmp() {
 		// 정말 삭제할 것인지 물어본 후 삭제하겠다고 하면
+		sc.nextLine();
 		System.out.print("정말 삭제하시겠습니까?(y/n) : ");
 		char cf = sc.nextLine().charAt(0);
 
