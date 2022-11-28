@@ -30,7 +30,7 @@ public class MemberMenu {
 				System.out.print("메뉴 번호 : ");
 				int num = sc.nextInt();
 				sc.nextLine();
-				
+
 				switch (num) {
 				case 1:
 					insertMember();
@@ -121,7 +121,7 @@ public class MemberMenu {
 		System.out.print("나이 : ");
 		int age = sc.nextInt();
 		System.out.println();
-		
+
 		mc.insertMember(id, name, password, email, gender, age);
 
 	}

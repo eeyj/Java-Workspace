@@ -16,7 +16,7 @@ public class PersonMenu {
 			System.out.println("학생은 최대 3명까지 저장할 수 있습니다.");
 			System.out.printf("현재 저장된 학생은 %d명입니다.\n", pc.personCount()[0]);
 			System.out.println("사원은 최대 10명까지 저장할 수 있습니다.");
-			System.out.printf("현재 저장된 사원은 %d명입니다./n", pc.personCount()[1]);
+			System.out.printf("현재 저장된 사원은 %d명입니다.\n", pc.personCount()[1]);
 
 			System.out.println();
 			System.out.println("1. 학생 메뉴");

@@ -14,6 +14,12 @@ public class Employee extends Person {
 		this.salary = salary;
 		this.dept= dept;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + ", " + salary + ", " + dept;
+	}
+	
 	
 	
 	
