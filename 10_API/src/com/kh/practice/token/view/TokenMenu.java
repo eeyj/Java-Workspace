@@ -6,8 +6,8 @@ import com.kh.practice.token.controller.TokenController;
 
 public class TokenMenu {
 	
-	Scanner sc = new Scanner(System.in);
-	TokenController tc = new TokenController();
+	private Scanner sc = new Scanner(System.in);
+	private TokenController tc = new TokenController();
 	
 	public void mainMenu() {
 		
@@ -32,14 +32,14 @@ public class TokenMenu {
 	
 	public void tokenMenu() {
 		
-		String str = "J a v a P r o g r a m";
-		System.out.println("토큰 처리 전 글자 : " +str);
-		System.out.println("토큰 처리 전 개수 : " +str.length());
+		String str = "J a v a P r o g r a m ";
+		System.out.println("토큰 처리 전 글자 : " + str);
+		System.out.println("토큰 처리 전 개수 : " + str.length());
 		
-		System.out.println("토큰 처리 후 글자 : "+ tc.afterToken(str));
+		System.out.println("토큰 처리 후 글자 : " + tc.afterToken(str));
 		System.out.println("토큰 처리 후 개수 : " + tc.afterToken(str).length());
 		
-		System.out.println("모두 대문자로 변환 : "+tc.afterToken(str).toUpperCase());
+		System.out.println("모두 대문자로 변환 : " + tc.afterToken(str).toUpperCase());
 		
 		
 	}
@@ -52,7 +52,7 @@ public class TokenMenu {
 
 		System.out.print("찾을 문자 하나를 입력하세요 : ");
 		char one = sc.nextLine().charAt(0);
-		System.out.println(one + " 문자가 들어간 개수 : "+tc.findChar(input, one));
+		System.out.println(one + " 문자가 들어간 개수 : " + tc.findChar(input, one));
 		
 		
 		
