@@ -1,6 +1,6 @@
 package com.kh.exception.controller;
 
-public class C_CustomException {
+public class C_CustomException extends Exception {
 
 	/*
 	 * 특정상황에서 발생하는 에러를 내가 직접 핸들링하는 방법.
@@ -18,7 +18,10 @@ public class C_CustomException {
 
 	
 	
-	
+	public C_CustomException(String msg) {
+		super(msg);
+	}
+
 	
 
 	

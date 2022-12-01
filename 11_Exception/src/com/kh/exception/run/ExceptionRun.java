@@ -4,7 +4,7 @@ import com.kh.exception.controller.*;
 
 public class ExceptionRun {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws C_CustomException {
 
 		/*
 		 * 에러(오류) 종류
@@ -35,7 +35,8 @@ public class ExceptionRun {
 		B_CheckedException bce = new B_CheckedException(); 
 		//bce.method1();
 		
-		
+	
+		throw new C_CustomException("예외처리.");
 
 		
 		

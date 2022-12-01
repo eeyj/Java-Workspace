@@ -9,10 +9,10 @@ public class NumberController {
 		super();
 	}
 	
-	public boolean checkDouble(int num1, int num2) throws NumRangeException {
+	public boolean checkDouble(int num1, int num2) throws NumRangeException { 
 		
 		boolean result = true;
-		if(1 <= num1 && num1 <100 && 1<=num2 && num2<100) {
+		if(1 <= num1 && num1 <= 100 && 1 <= num2 && num2 <= 100) {
 			if(num1%num2 == 0) {
 				result = true;
 			} else {
