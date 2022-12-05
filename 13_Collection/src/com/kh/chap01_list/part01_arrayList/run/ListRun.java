@@ -1,6 +1,7 @@
 package com.kh.chap01_list.part01_arrayList.run;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.kh.chap01_list.part01_arrayList.model.vo.Music;
 
@@ -54,7 +55,7 @@ public class ListRun {
 		 * 
 		 */
 
-		ArrayList<Music> list = new ArrayList<>(3); // 기본적으로 내부적으로 크기 10짜리 배열 생성됨.
+		ArrayList<Music> list = new ArrayList<>(3); // 기본적으로 배열의 크기를 지정하지 않으면 내부적으로 크기 10짜리 배열 생성됨.
 		
 		System.out.println(list);
 		
@@ -127,6 +128,32 @@ public class ListRun {
 			System.out.println(o);
 		}
 		
+		System.out.println("===============================================================");
+		
+		
+		// 7. subList(int index1, int index2) : 해당 리스트로부터 index1부터 index2까지의 데이터 값들을
+		//                                      추출해서 새로운 List로 반환시켜주는 메소드
+		
+		List<Music> sub = list.subList(0, 2); //  0 <= 인덱스 범위 < 2
+		System.out.println(sub);
+		
+		System.out.println("===============================================================");
+		
+		// 8. addAll(Collection c) : 해당 리스트에 다른 컬렉션에 있는 데이터들을 통채로 추가해주는 메소드
+		list.addAll(sub);
+		System.out.println(list);
+		
+		System.out.println("===============================================================");
+		
+		// 9. isEmpty() : 해당 메소드가 비어있는지 묻는 메소드(비어있으면 true, 비어있지 않다면 false 반환)
+		System.out.println("리스트가 비어있습니까? " + list.isEmpty()); 
+		
+		
+		System.out.println("===============================================================");
+		// 10. clear() : 해당 리스트를 비워주는 메소드
+		list.clear();
+		System.out.println(list);
+		System.out.println("리스트가 비어있습니까? " + list.isEmpty());
 		
 		
 		
