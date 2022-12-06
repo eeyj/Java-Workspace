@@ -60,7 +60,8 @@ public class BufferedDao {
 		 * 
 		 */
 		
-		try {BufferedWriter bw = new BufferedWriter(new FileWriter("c_buffer.txt"));
+		try {
+			BufferedWriter bw = new BufferedWriter(new FileWriter("c_buffer.txt"));
 			bw.write("안녕하세요.");
 			bw.newLine();
 			bw.write("안녕하세요. \n");
