@@ -42,7 +42,7 @@ public class EnumRun {
 		System.out.println(EnumTest.MONDAY);
 		System.out.println(EnumTest.MONDAY.name());
 		
-		// enum으로 만들어둔 클래스는 임포트 없이 사용가능
+		// enum으로 만들어둔 클래스는 객체 생성(new Day()) 없이 사용가능
 		System.out.println(Day1.MONDAY);
 		
 		// enum 필드 안에 담긴 값을 반환해주는 메소드
